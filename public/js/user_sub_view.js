@@ -212,6 +212,11 @@
                   store.filter("user_id", new RegExp(new_value));
                 }}},
                    "-",
+                   { text: "Add User",
+                     icon: "images/add.png",
+                     handler: function() {
+                       self.add_user();
+                     }},
                    { text: "Delete User",
                      icon: "images/remove.png",
                      handler: function() {
